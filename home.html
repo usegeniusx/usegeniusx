@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website Intro</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover Animation */
+        .navbar ul li a::before,
+        .navbar ul li a::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar ul li a::before {
+            top: 0;
+            transform-origin: right;
+        }
+
+        .navbar ul li a::after {
+            bottom: 0;
+            transform-origin: left;
+        }
+
+        .navbar ul li a:hover::before,
+        .navbar ul li a:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* Intro Section */
+        .intro {
+            height: 100vh;
+            background: url('1.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .intro p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        .intro .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #6200ea;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro .btn:hover {
+            background-color: #3700b3;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            padding: 10px 0;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">Use Genius X</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="google chatbot.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <p>"Knowledge is a garden; education is the gardener that nurtures the seeds of curiosity into the blossoms of understanding."</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </div>
+</body>
+<hr color="#808080"size="10">
+
+<h1 style="margin-top:70px;font-size:50px;text-align:center;"> What is Genius X </h1>
+<p style="font-size:20px;">Genius X is an online, free educational platform dedicated to empowering learners of all ages with high-quality knowledge and skills. Our mission is to make education accessible and engaging for everyone, regardless of geographic location or financial background. We offer a diverse range of courses across various subjects, including mathematics, science, technology, arts, and humanities, all crafted by experienced educators and industry professionals.
+
+At Genius X, we believe in a learner-centric approach, providing interactive lessons, multimedia content, and practical exercises to ensure a comprehensive understanding of each topic. Our platform features real-time quizzes and progress tracking to help learners assess their knowledge and stay motivated.
+
+In addition to traditional academic subjects, Genius X also provides resources for personal development, including leadership skills, language learning, and career guidance. Our community forums allow users to connect, collaborate, and share insights with peers from around the world.</p>
+
+
+</html>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .section {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            min-width: 150px; /* Ensures sections don't get too small on narrow screens */
+            max-width: 18%; /* Adjust based on the number of columns and container width */
+        }
+
+        .section:nth-child(odd) {
+            background-color:black; /* Light cyan for odd sections */
+        }
+
+        .section:nth-child(even) {
+            background-color: black; /* Light lime for even sections */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section">
+            <h2>PHYSICS</h2>
+            <p style="font-size:20px;">Study of matter and energy.</p>
+            <a href="study.html">View</a>
+        </div>
+        <div class="section">
+            <h2>CHEMISTRY</h2>
+            <p style="font-size:20px;">"The study of matter's properties."</p>
+            <a href="study.html">View</a>
+        </div>
+        <div class="section">
+            <h2>MATHS</h2>
+            <p style="font-size:20px;">Math is the study of patterns.</p>
+            <a href="study.html">View</a>
+        </div>
+        <div class="section">
+            <h2>BIOLOGY</h2>
+            <p style="font-size:20px;">Brief, essential personal information.</p>
+            <a href="study.html">View</a>
+        </div>
+        <div class="section">
+            <h2>ENGLISH</h2>
+            <p style="font-size:20px;">English is a global, widely spoken language.</p>
+        <a href="study.html">View</a>
+      </div>
+    </div>
+
+</body>
+<h1 style="margin-top:70px;font-size:50px;text-align:center;"> Why Genius X </h1>
+<p style="font-size:20px;text-aligncentre;">Genius X is a premier online educational platform dedicated to offering high-quality, free resources for learners of all ages. Our mission is to democratize education by providing access to a wide range of materials and tools that support learning and personal growth. At Genius X, you'll find an extensive collection of free essays, research papers, and educational materials designed to enhance your understanding of various subjects.
+
+Our platform features expertly crafted essays on a myriad of topics, from literature and history to science and technology. These essays serve as valuable study aids, helping students grasp complex concepts and develop critical thinking skills. Additionally, Genius X offers a rich array of other educational resources, including interactive tutorials, instructional videos, and practice exercises, all designed to make learning engaging and effective.
+
+Whether you're preparing for exams, working on a research project, or simply exploring new interests, Genius X provides the tools you need to succeed. Our user-friendly interface ensures that accessing and navigating these resources is simple and straightforward. We are committed to supporting learners in their educational journey, offering high-quality content at no cost, and fostering a community where knowledge and curiosity thrive.
+
+Join Genius X today and unlock a world of free educational materials designed to help you achieve your academic and personal goals.</p>
+
+<img src="2.webp"
+<body>
+<h2 style="margin-top:70px;font-size:80px;text-align:center;">Services </h2>
+
+ <p style="padding:100px;font-size:25px;">
+ <a href="contact.html">1.  The Impact of Artificial Intelligence on Modern Education</a><br>
+ <a href="contact.html">2.  Climate Change and Its Global Effects</a><br>
+ <a href="contact.html">3.  The Role of Social Media in Shaping Public Opinion</a><br>
+ <a href="contact.html">4.  The Future of Remote Work: Pros and Cons</a><br>
+ <a href="contact.html">5.  Mental Health Awareness in the Workplace</a><br>
+ <a href="contact.html">6.  The Importance of Digital Literacy in the 21st Century</a><br>
+ <a href="contact.html">7.  The Ethics of Genetic Engineering</a><br>
+ <a href="contact.html">8.  Cultural Diversity and Its Impact on Society</a><br>
+ <a href="contact.html">9.  The Rise of Renewable Energy: Challenges and Opportunities</a><br>
+ <a href="contact.html">10. The Evolution of E-commerce and Its Effects on Traditional Retail</a><br>
+ <a href="contact.html">11. The Role of Government in Regulating the Internet</a><br>
+ <a href="contact.html">12. Artificial Intelligence in Healthcare: Benefits and Risks</a><br>
+ <a href="contact.html">13. The Future of Space Exploration</a><br>
+ <a href="contact.html">14. The Role of Education in Combating Climate Change</a><br>
+ </p>
+</body>
+<head>
+       <style>
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            background-color: #555;
+        }
+
+        .section h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .section p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .section a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and values.</p>
+            <a href="about.html">Learn More</a>
+        </div>
+
+        <div class="section">
+            <h2>Services</h2>
+            <p>Discover the range of services we offer.</p>
+            <a href="services.html">Explore Services</a>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Get in touch with us for more information.</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+ <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
+</body>
+   

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .category {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .category h2 {
+            margin-top: 0;
+        }
+
+        .category p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .category img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .back-to-top {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .back-to-top a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285F4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-to-top a:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#category1">Category 1</a>
+        <a href="#category2">Category 2</a>
+        <a href="#category3">Category 3</a>
+        <a href="#category4">Category 4</a>
+    </div>
+
+    <div class="container">
+
+        <div id="category1" class="category">
+            <h2>Category 1</h2>
+            <img src="https://via.placeholder.com/800x400/ff7f7f/ffffff?text=Category+1" alt="Category 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque urna nec orci sagittis, sit amet feugiat velit scelerisque.</p>
+        </div>
+
+        <div id="category2" class="category">
+            <h2>Category 2</h2>
+            <img src="https://via.placeholder.com/800x400/7f7fff/ffffff?text=Category+2" alt="Category 2">
+            <p>Phasellus imperdiet nisi ut libero scelerisque, eu consectetur ex facilisis. Nulla facilisi. Praesent sed arcu nec ante tempus aliquet.</p>
+        </div>
+
+        <div id="category3" class="category">
+            <h2>Category 3</h2>
+            <img src="https://via.placeholder.com/800x400/7fff7f/ffffff?text=Category+3" alt="Category 3">
+            <p>Suspendisse potenti. Duis fermentum erat nec nisi fringilla, et pretium nunc sollicitudin. Sed convallis, mauris nec consectetur varius.</p>
+        </div>
+
+        <div id="category4" class="category">
+            <h2>Category 4</h2>
+            <img src="https://via.placeholder.com/800x400/ffff7f/ffffff?text=Category+4" alt="Category 4">
+            <p>Vivamus scelerisque libero ac ex blandit, vel cursus sapien laoreet. Sed tincidunt dui at mi dictum, in dictum nisi vehicula.</p>
+        </div>
+
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+
+</body>
+</html>

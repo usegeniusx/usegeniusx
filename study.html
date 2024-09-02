@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius X Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+.categories {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 410px;
+    display: flex;
+    justify-content: centre;
+}
+
+.category {
+    position: relative;
+    margin: 0;
+}
+
+.category > a {
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.category > a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    list-style-type: none;
+}
+
+.dropdown li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #3e8e41;
+}
+
+.category:hover .dropdown {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+ 
+</style>
+ <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">Use Genius X</div>
+        <ul class="categories">
+            <li class="category">
+                <a href="#">Physics</a>
+                <ul class="dropdown">
+                    <li><a href="#">Mechanics</a></li>
+                    <li><a href="#">Thermodynamics</a></li>
+                    <li><a href="#">Electromagnetism</a></li>
+                    <li><a href="#">Quantum Physics</a></li>
+                </ul>
+            </li>
+            <li class="category">
+                <a href="#">Chemistry</a>
+                <ul class="dropdown">
+                    <li><a href="#">Organic Chemistry</a></li>
+                    <li><a href="#">Inorganic Chemistry</a></li>
+                    <li><a href="#">Physical Chemistry</a></li>
+                    <li><a href="#">Biochemistry</a></li>
+                </ul>
+            </li>
+            <li class="category">
+                <a href="#">Math</a>
+                <ul class="dropdown">
+                    <li><a href="#">Algebra</a></li>
+                    <li><a href="#">Calculus</a></li>
+                    <li><a href="#">Geometry</a></li>
+                    <li><a href="#">Statistics</a></li>
+                </ul>
+            </li>
+            <li class="category">
+                <a href="#">Biology</a>
+                <ul class="dropdown">
+                    <li><a href="#">Cell Biology</a></li>
+                    <li><a href="#">Genetics</a></li>
+                    <li><a href="#">Ecology</a></li>
+                    <li><a href="#">Human Biology</a></li>
+                </ul>
+            </li>
+            <li class="category">
+                <a href="#">English</a>
+                <ul class="dropdown">
+                    <li><a href="#">Grammar</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Writing Skills</a></li>
+                    <li><a href="#">Vocabulary</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Welcome to Genius X Educational Platform! Select a category to explore more.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Genius X. All rights reserved.</p>
+    </footer>
+</body>
+</html>
